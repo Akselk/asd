@@ -15,11 +15,11 @@ func FindIndexSmallestNumber(arrayofnumber []int) (indexOfSmallest int) {
 	return
 }
 
-func FindIndexOfNumber(arrayofnumber []int, number int) (indexofnumber int) {
-	indexofnumber = -1
+func FindIndexOfNumber(arrayofnumber []int, number int) (indexOfNumber int) {
+	indexOfNumber = -1
 	for index := 0; index < len(arrayofnumber); index++ {
 		if arrayofnumber[index] == number {
-			indexofnumber = index
+			indexOfNumber = index
 			return
 		}
 	}
@@ -88,14 +88,14 @@ func Abs(number int) (absnumber int) {
 	return
 }
 
-func FindLowestIPindex(ip []string) (lowestip int) {
+func FindLowestIPindex(ip []string) (lowestIPIndex int) {
 	if len(ip) == 1 {
 		return 0
 	}
-	lowestip = 0
+	lowestIPIndex = 0
 	for index := 0; index < len(ip); index++ {
-		if ip[index] < ip[lowestip] {
-			lowestip = index
+		if ip[index] < ip[lowestIPIndex] {
+			lowestIPIndex = index
 		}
 	}
 	return
