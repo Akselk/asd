@@ -3,7 +3,7 @@ package helpModule
 func FindIndexSmallestNumber(arrayofnumber []int) (indexOfSmallest int) {
 
 	var number int = 1000
-	indexofsmallest = -1
+	indexOfSmallest = -1
 
 	for index := 0; index < len(arrayofnumber); index++ {
 		if arrayofnumber[index] < number && arrayofnumber[index] > 0 {
@@ -58,7 +58,7 @@ func IndexToFloor(index int) (floor int) {
 }
 
 func HighestIndex(arrayofnumber []int) (indexOfNumber int) {
-	index = -1
+	indexOfNumber = -1
 
 	for index := len(arrayofnumber); index > 0; index-- {
 		if arrayofnumber[index-1] > 0 {
@@ -70,7 +70,7 @@ func HighestIndex(arrayofnumber []int) (indexOfNumber int) {
 }
 
 func LowestIndex(arrayofnumber []int) (indexOfNumber int) {
-	index = -1
+	indexOfNumber = -1
 	for index := 0; index < len(arrayofnumber); index++ {
 		if arrayofnumber[index] > 0 {
 			indexOfNumber = index
